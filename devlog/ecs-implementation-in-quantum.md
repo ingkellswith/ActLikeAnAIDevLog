@@ -1,13 +1,13 @@
 ---
-description: Photon Quantum3에서의 ECS의 구현에 대해서 다룹니다.
 icon: '4'
+description: Photon Quantum3에서의 ECS의 구현에 대해서 다룹니다.
 ---
 
 # ECS Implementation in Quantum
 
 앞장에서 ECS에 대한 개념을 살펴보았다. 이 장에서는 Act like an AI에 사용된 Quantum ECS의 사용법을 다룬다.
 
-Quantum ECS 구조를 사용하여 Act like an AI에서는플레이어를 어떻게 생성했는지 알아보자.
+Quantum ECS 구조를 사용하여 Act like an AI에서는 플레이어를 어떻게 생성했는지 알아보자.
 
 ## Entity
 
@@ -95,7 +95,7 @@ private void SpawnPlayer(Frame frame, PlayerRef player, List<(int x, int z)> spa
     frame.Add(playerEntity, playerLink);
     
     // 난수 시드 생성
-    int rngSeed = unchecked((frame.Number ^ player) % int.MaxValue);
+    int rngSeed = (frame.Number ^ player) % int.MaxValue;
     RNGSession rngSession = new RNGSession(rngSeed);
     
     // Spawn Point 지정

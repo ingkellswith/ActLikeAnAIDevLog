@@ -1,6 +1,6 @@
 ---
-description: URP와 Batch에 대해서 다룹니다.
 icon: '5'
+description: URP와 Batch에 대해서 다룹니다.
 ---
 
 # URP와 Batch
@@ -67,14 +67,12 @@ Unity URP에서는 주로 다음과 같은 배칭 기법을 사용한다.
 
 배칭은 **실시간 렌더링에서 성능 최적화**에 중요한 역할을 한다. 각 드로우 콜은 CPU와 GPU 사이에서 많은 자원을 소비할 수 있으므로, 이러한 드로우 콜을 줄이는 것이 성능 최적화의 핵심이다. 특히, 게임이나 3D 애플리케이션에서 한 프레임당 여러 수백 개 이상의 오브젝트를 그려야 할 때는 배치가 더 중요할 것이다.
 
-Act like an AI에서는 static batching, dynamic batching, srp batching을 사용했다.
-
 아쉽게도, SRP Batching과 GPU Instancing은 공통적으로 서로 다른 애니메이션을 보여줘야 하는 Skinned Mesh에는 적용되지 않는다는 공통점이 있다.
 
-Act like an AI에서는 동일한 Skinned Mesh를 사용하지만 서로 다른 애니메이션을 사용하기에 적용이 불가능한 것이다.
+Act like an AI에서는 캐릭터에  Skinned Mesh를 사용하기에 SRP Batching과 GPU Instancing을 적용할 수 없다.
 
 <figure><img src="../.gitbook/assets/urp-1.png" alt="" width="428"><figcaption><p>SRP Batching, GPU Instancing 옵션을 켜도 안 킨 것과 차이가 거의 없음</p></figcaption></figure>
 
 이를 해결하기 위해서는 Animation Instancing, Mesh Animator같은 방법을 사용해야 하는데 퀄리티 저하, 빌드 용량 추가 등의 단점이 있어 사용에 주의가 필요하다.
 
-Act like an AI에서 URP를 선택한 이유는 SRP Batching의 지원도 있지만, Scriptable Render Pipeline을 사용하기 위한 목적이 더 크다. 다음 장에서 SRP에 대해서 알아보자.
+Act like an AI에서 URP를 선택한 이유는 경량화된 렌더링 패스 뿐만 아니라 Scriptable Render Pipeline을 사용하기 위함이다. 다음 장에서 SRP에 대해서 알아보자.

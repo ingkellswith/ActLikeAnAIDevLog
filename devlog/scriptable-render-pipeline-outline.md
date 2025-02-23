@@ -1,6 +1,6 @@
 ---
-description: SRP를 사용해 Skinned Mesh의 Outline을 렌더링하는 방법에 대해 알아봅니다.
 icon: '6'
+description: SRP를 사용해 Skinned Mesh의 Outline을 렌더링하는 방법에 대해 알아봅니다.
 ---
 
 # Scriptable Render Pipeline과 Outline
@@ -28,6 +28,10 @@ icon: '6'
 스쿼드 버스터즈에서는 겹치는 Mesh를 하나로 취급하여 그 가장자리에만 Outline을 렌더링했다.
 
 Act like an AI에서는 카메라 확대 기능을 제공하지 않기 때문에 굳이 원신처럼 디테일한 아웃라인을 그릴 필요가 없어서 더 캐주얼한 모습을 강조할 수 있도록, 스쿼드 버스터즈처럼 캐릭터의 가장자리에만 Outline을 렌더링하는 방법을 택했다.
+
+## SRP (Scriptable Render Pipeline)란?
+
+SRP는 **Unity에서 제공하는 커스텀 렌더링 파이프라인 시스템**으로, 개발자가 렌더링 과정을 직접 제어하고 최적화할 수 있도록 설계되었다.
 
 ## SRP(Scriptable Render Pipeline)의 장점
 
