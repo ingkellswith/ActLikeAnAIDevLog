@@ -8,13 +8,17 @@ description: Act like an AI 개발에 사용된 기술적인 내용을 다룹니
 
 모바일 3D 멀티플레이어 캐주얼 배틀 로얄게임인 'Act like an AI'를 개발하기 위해 어떤 접근 방식, 기술을 사용했는지 기록한 개발 로그입니다.&#x20;
 
-## Apple App Store
+## GitBook
 
-[https://apps.apple.com/us/app/act-like-an-ai/id6670606421](https://apps.apple.com/us/app/act-like-an-ai/id6670606421)
+{% embed url="https://allover3773.gitbook.io/act-like-an-ai-devlog" %}
 
 ## Google Play Store
 
-[https://play.google.com/store/apps/details?id=com.IngkellsGames.ActLikeAI](https://play.google.com/store/apps/details?id=com.IngkellsGames.ActLikeAI)
+[![](https://img.shields.io/badge/App_Store-Act_like_an_AI-FF0000?style=flat-square\&logo=AppStore\&logoColor=white)](https://play.google.com/store/apps/details?id=com.IngkellsGames.ActLikeAI)
+
+## Apple App Store
+
+[![](https://img.shields.io/badge/Google_Play_Store-Act_like_an_AI-4285F4?style=flat-square\&logo=GooglePlay\&logoColor=white)](https://apps.apple.com/us/app/act-like-an-ai/id6670606421)
 
 ## Index
 
